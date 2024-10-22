@@ -107,3 +107,5 @@ Tests:
 
 I wrote some unit tests with Vitest for the components that I had written these covered mocking the fetch endpoints with mock data to make sure the components correctly displayed the data. The main tests surrounding the functionality was that when the search input was used it filtered correctly and also that the fetch DELETE endpoint was called when the post delete button was pressed.
 
+Used `npx vitest run --coverage` to show coverage of components and which lines needed testing within them
+
