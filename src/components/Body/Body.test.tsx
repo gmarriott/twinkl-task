@@ -4,14 +4,16 @@ import { Body } from "./Body";
 
 // Mock the fetch API using Vitest
 beforeEach(() => {
-  global.fetch = vi.fn(() =>
-    Promise.resolve({
-      json: () =>
-        Promise.resolve([
-          { id: 1, title: "Post One", body: "Body of Post One" },
-          { id: 2, title: "Post Two", body: "Body of Post Two" },
-        ]),
-    })
+  global.fetch = vi.fn(
+    () =>
+      Promise.resolve({
+        // Simulate a Response object
+        json: () =>
+          Promise.resolve([
+            { id: 1, title: "Post One", body: "Body of Post One" },
+            { id: 2, title: "Post Two", body: "Body of Post Two" },
+          ]),
+      } as Response) // cast as Response type
   );
 });
 
