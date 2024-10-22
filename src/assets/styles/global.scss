@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #2499f9;
+  height: 100%;
+  color: black;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.searchInput {
+  min-width: 230px;
+  padding: 1rem;
+}
